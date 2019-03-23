@@ -1,0 +1,83 @@
+<html>
+    <head>
+        
+        <style>
+            
+            cd {
+                position: absolute;
+                width: 500px;
+                height: 500px;
+                top: calc(50% - 250px);
+                left: calc(50% - 250px);
+                }
+
+                cd disc {
+                overflow: hidden;
+                position: absolute;
+                width: 500px;
+                height: 500px;
+                background-color: #42495f;
+                border-radius: 250px;
+                }
+
+                cd line {
+                position: absolute;
+                width: 0px;
+                height: 0px;
+                top: -10px;
+                left: 90px;
+                background-color: transparent;
+                border-top: 0px solid transparent;
+                border-left: 70px solid transparent;
+                border-right: 70px solid transparent;
+                border-bottom: 300px solid #7282bf;
+                transform: rotate(140deg);
+                }
+
+                cd line:last-child {
+                top: 220px;
+                left: 280px;
+                transform: rotate(320deg);
+                }
+
+                cd inner {
+                position: absolute;
+                width: 200px;
+                height: 200px;
+                top: 150px;
+                left: 150px;
+                background-color: #e7eced;
+                border-radius: 100px;
+                box-shadow: 0px 0px 0px #ffffff;
+                }
+
+                cd hole {
+                position: absolute;
+                width: 50px;
+                height: 50px;
+                top: 225px;
+                left: 225px;
+                background-color: #ffffff;
+                border-radius: 50px;
+                }
+
+        </style>
+
+    </head>
+    <body>
+
+            <cd>
+                
+                <disc>
+                    <line></line>
+                    <line></line>
+                </disc>
+                
+                <inner></inner>
+            
+                <hole></hole>
+
+            </cd>
+
+    </body>
+</html>
